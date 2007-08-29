@@ -42,6 +42,6 @@ fi
 %{_datadir}/X11/app-defaults/Xditview-chrtr
 %{_includedir}/X11/bitmaps/ldblarrow
 %{_includedir}/X11/bitmaps/rdblarrow
-%{_mandir}/man1/xditview.1x.bz2
+%{_mandir}/man1/xditview.1x*
 
 
