@@ -1,6 +1,6 @@
 Name:		xditview
 Version:	1.0.1
-Release:	%mkrel 6
+Release:	%mkrel 7
 Summary:	Display ditroff output
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -18,6 +18,7 @@ Display ditroff output.
 %setup -q -n %{name}-%{version}
 
 %build
+autoreconf -ifs
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
@@ -42,6 +43,6 @@ fi
 %{_datadir}/X11/app-defaults/Xditview-chrtr
 %{_includedir}/X11/bitmaps/ldblarrow
 %{_includedir}/X11/bitmaps/rdblarrow
-%{_mandir}/man1/xditview.1x*
+%{_mandir}/man1/xditview.1*
 
 
