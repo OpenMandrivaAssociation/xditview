@@ -18,7 +18,7 @@ Display ditroff output.
 %setup -q -n %{name}-%{version}
 
 %build
-autoreconf -ifs
+#autoreconf -ifs
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
