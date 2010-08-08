@@ -1,6 +1,6 @@
 Name:		xditview
-Version:	1.0.1
-Release:	%mkrel 10
+Version:	1.0.2
+Release:	%mkrel 1
 Summary:	Display ditroff output
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
