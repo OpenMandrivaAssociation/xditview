@@ -7,7 +7,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.
 License:	MIT
 
 BuildRequires: libxt-devel >= 1.0.0
-BuildRequires: libxaw-devel >= 1.0.1
+BuildRequires: pkgconfig(xaw7)
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
