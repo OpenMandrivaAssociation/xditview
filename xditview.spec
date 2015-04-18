@@ -1,6 +1,6 @@
 Name:		xditview
-Version:	1.0.3
-Release:	9
+Version:	1.0.4
+Release:	1
 Summary:	Display ditroff output
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -17,18 +17,14 @@ Display ditroff output.
 %setup -q
 
 %build
-%configure --x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
+%configure \
+	--x-includes=%{_includedir} \
+	--x-libraries=%{_libdir}
 
 %make
 
 %install
 %makeinstall_std
-
-%pre 
-if [ -h %{_includedir}/X11 ]; then
-	rm -f %{_includedir}/X11
-fi
 
 %files
 %{_bindir}/xditview
